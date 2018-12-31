@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingTop="25dp"
+        android:paddingStart="20dp"
+        android:text="Welcome to your"
+        android:fontFamily="monospace"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:paddingStart="50dp"
+        android:text="Class Scheduler"
+        android:fontFamily="monospace"
+        android:textSize="30sp" />
+
+    <android.support.v7.widget.CardView
+        tools:style="@style/CardView"
+        android:layout_marginTop="10sp"
+        android:id="@+id/MathCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/MathClassPicture"
+                android:layout_width="111dp"
+                android:layout_height="74dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/math_icon2" />
+
+            <TextView
+                android:id="@+id/subject_math"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="60dp"
+                android:text="@string/math_subject"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/HistoryCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        tools:style="@style/CardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/HistoryClassPicture"
+                android:layout_width="111dp"
+                android:layout_height="74dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/history_icon" />
+
+            <TextView
+                android:id="@+id/subject_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/HistoryClassPicture"
+                android:layout_marginEnd="34dp"
+                android:text="@string/history_subject"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ScienceCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        tools:style="@style/CardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ScienceClassPicture"
+                android:layout_width="111dp"
+                android:layout_height="74dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sciene_icon" />
+
+            <TextView
+                android:id="@+id/subject_science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/ScienceClassPicture"
+                android:layout_marginEnd="36dp"
+                android:text="@string/science_class"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CodingCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        tools:style="@style/CardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/CodingClassPicture"
+                android:layout_width="111dp"
+                android:layout_height="74dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/coding_icon3" />
+
+            <TextView
+                android:id="@+id/subject_coding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/CodingClassPicture"
+                android:layout_marginEnd="36dp"
+                android:text="@string/coding_class"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

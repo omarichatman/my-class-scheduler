@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        android:text="Math Class Alarm"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:contentDescription="Alarm Image"
+        app:layout_constraintBottom_toTopOf="@+id/class_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/alarm_clock_icon" />
+
+    <TextView
+        android:id="@+id/class_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/minutes"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="38dp"
+        android:text="Where is you class located?"
+        app:layout_constraintBottom_toTopOf="@+id/prof_name"
+        app:layout_constraintEnd_toStartOf="@+id/classLocationMath"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/classLocationMath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/profNameMath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/class_location" />
+
+    <TextView
+        android:id="@+id/prof_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/minutes"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="37dp"
+        android:text="Whats your professors name?"
+        app:layout_constraintBottom_toTopOf="@+id/minutes"
+        app:layout_constraintEnd_toStartOf="@+id/profNameMath"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_location" />
+
+    <EditText
+        android:id="@+id/profNameMath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/minutes"
+        android:layout_alignBottom="@+id/prof_name"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/minutes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prof_name" />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="35dp"
+        android:text="How many minutes away is you class?"
+        app:layout_constraintBottom_toTopOf="@+id/classAlarmMath"
+        app:layout_constraintEnd_toStartOf="@+id/classMinutesMath"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prof_name" />
+
+    <EditText
+        android:id="@+id/classMinutesMath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/minutes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minutes"
+        app:layout_constraintTop_toBottomOf="@+id/profNameMath" />
+
+    <Button
+        android:id="@+id/classAlarmMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Set Alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/minutes"
+        app:layout_constraintTop_toBottomOf="@+id/minutes" />
+
+</android.support.constraint.ConstraintLayout>
