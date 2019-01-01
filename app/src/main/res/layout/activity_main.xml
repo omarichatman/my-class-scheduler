@@ -8,22 +8,12 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:paddingTop="25dp"
-        android:paddingStart="20dp"
-        android:text="Welcome to your"
-        android:fontFamily="monospace"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
-        android:textAlignment="center"
-        android:paddingStart="50dp"
-        android:text="Class Scheduler"
+        android:paddingBottom="25dp"
+        android:text="Welcome to Class Scheduler"
         android:fontFamily="monospace"
         android:textSize="30sp" />
 

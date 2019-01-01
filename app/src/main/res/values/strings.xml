@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Your Class Scheduler</string>
+    <string name="app_name">Class Scheduler</string>
     <string name="math_subject">Math Class</string>
     <string name="history_subject">History Subject</string>
     <string name="science_class">Science Class</string>
