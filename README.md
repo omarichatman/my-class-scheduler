@@ -1,3 +1,4 @@
 # my-class-scheduler
 
-![Demo Animation](../assets/demo.gif?raw=true)
+<img src="assets/demo.gif" width="225" height="400" />
+<img src="assets/demo-notification.png" width="225" height="400" />
